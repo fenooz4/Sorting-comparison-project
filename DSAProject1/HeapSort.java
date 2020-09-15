@@ -1,5 +1,7 @@
-
+//not done
 public class HeapSort {
+	static int comparisons =0;
+	static int movements = 0;
 	//heap sort method
 	public static<E extends Comparable<E>> void heapSort(E[] list) {
 		//create a heap of integers
@@ -14,6 +16,17 @@ public class HeapSort {
 			list[i] = heap.remove();
 		
 	}
-	
+	public static int getComparisons() {
+		return comparisons;
+	}
+	public static int getMovements() {
+		return movements;
+	}
+	public static void resetMovements() {
+		movements = 0;
+	}
+	public static void resetComparisons() {
+		movements = 0;
+	}
 	
 }

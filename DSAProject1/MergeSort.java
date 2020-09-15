@@ -1,5 +1,7 @@
-
+//not done
 public class MergeSort {
+	static int comparisons =0;
+	static int movements = 0;
 	//the method for sorting the numbers
 	public static void mergeSort(int[] list) {
 		if(list.length>1) {
@@ -33,5 +35,17 @@ public class MergeSort {
 			temp[current3++] = list1[current1++];
 		while(current2<list2.length)
 			temp[current3++] = list2[current2++];
+	}
+	public static int getComparisons() {
+		return comparisons;
+	}
+	public static int getMovements() {
+		return movements;
+	}
+	public static void resetMovements() {
+		movements = 0;
+	}
+	public static void resetComparisons() {
+		movements = 0;
 	}
 }
